@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "tasks-from-anywhere",
+  "version": "0.1.0",
+  "description": "",
+  "action": {
+    "default_title": "Tasks From Anywhere",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "public/images/128x128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": ["activeTab", "contextMenus", "scripting"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "icons": {
+    "16": "public/images/16x16.png",
+    "32": "public/images/32x32.png"
+  }
+}
